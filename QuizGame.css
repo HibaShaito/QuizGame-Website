@@ -1,0 +1,131 @@
+/* QuizGame.css */
+
+/* General Styles */
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("istockphoto-1154425711-612x612.jpg") no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the entire viewport */
+}
+
+  
+  .container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(rgb(124, 255, 124),rgb(255, 255, 160));
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  /* Difficulty Selection */
+  #difficulty-container {
+    margin-bottom: 20px;
+  }
+  
+  .difficulty-button {
+    background-color: #fc6d00;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .difficulty-button:hover {
+    background-color: #ff0000;
+  }
+  
+  /* Quiz Container */
+  .quiz-container {
+    display: none; /* Initially hidden */
+  }
+  
+  #question {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  #options {
+    margin-bottom: 20px;
+  }
+  
+  .option-button {
+    background-color: #ecf0f1;
+    border: 2px solid #bdc3c7;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 5px 0;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .option-button:hover {
+    background-color: #bdc3c7;
+  }
+  
+  #next-btn {
+    margin-top: 20px;
+  }
+  
+  #next-button {
+    background-color: #2ecc71;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  #next-button:hover {
+    background-color: #27ae60;
+  }
+  
+  /* Results & Leaderboard */
+  #result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #27ae60;
+    font-weight: bold;
+  }
+  
+  #leaderboard {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #e74c3c;
+    font-weight: bold;
+  }
+
+.option-button.correct {
+    background-color: #2ecc71; 
+    color: white;
+    border-color: #27ae60; 
+}
+
+.option-button.incorrect {
+    background-color: #e74c3c; 
+    color: white;
+    border-color: #c0392b;
+}

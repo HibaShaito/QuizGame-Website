@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Quiz Game</title>
+    <link rel="stylesheet" href="QuizGame.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Advanced Quiz Game</h1>
+      <div id="difficulty-container">
+        <h2>Select Difficulty</h2>
+        <button class="difficulty-button" onclick="startQuiz('easy')">
+          Easy
+        </button>
+        <button class="difficulty-button" onclick="startQuiz('medium')">
+          Medium
+        </button>
+        <button class="difficulty-button" onclick="startQuiz('hard')">
+          Hard
+        </button>
+      </div>
+      <div class="quiz-container" id="quiz-container">
+        <div id="question-count" style="display: none"></div>
+        <!-- Display remaining questions -->
+        <div id="question"></div>
+        <div id="options"></div>
+        <div id="next-btn">
+          <button id="next-button">Next</button>
+        </div>
+        <div id="result"></div>
+        <div id="leaderboard" style="display: none"></div>
+        <div id="time-remaining">
+          Time left: <span id="time-value">50</span> seconds
+        </div>
+      </div>
+    </div>
+    <script src="QuizGame.js"></script>
+  </body>
+</html>
